@@ -23,6 +23,9 @@ module.exports = {
             extendConsole : true,
 
             // logs files, both optional
+            //   {string} fileName – stream output to file
+            //   true – don't redirect output, keep as is
+            //   false – shut down output
             stdout : "/var/run/luster/myapp/output.log",
             stderr : "/var/run/luster/myapp/errors.log"
         }
