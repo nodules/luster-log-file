@@ -1,6 +1,6 @@
 {
     "name" : "luster-log-file",
-    "version" : "0.1.4",
+    "version" : "0.2.0",
     "description" : "Stream luster master and workers output to files",
     "main" : "./lib/extension.js",
     "scripts" : {
@@ -28,6 +28,9 @@
     "readmeFilename" : "README.md",
     "dependencies" : {
         "mkdirp" : "0.3.x"
+    },
+    "peerDependencies" : {
+        "luster" : ">=0.3.1"
     },
     "devDependencies" : {
         "jshint" : "2.1.x",
