@@ -1,39 +1,40 @@
 {
-    "name" : "luster-log-file",
-    "version" : "0.2.0",
-    "description" : "Stream luster master and workers output to files",
-    "main" : "./lib/extension.js",
-    "scripts" : {
-        "test" : "jshint --config ./.jshintrc ./lib && jscs ./lib"
-    },
-    "repository" : {
-        "type" : "git",
-        "url" : "git://github.com/nodules/luster-log-file.git"
-    },
-    "keywords" : [
-        "luster",
-        "logger",
-        "log"
-    ],
-    "author" : "Phillip Kovalev <twilightfeel@gmail.com> (https://github.com/kaero)",
-    "maintainers" : [
-        "Phillip Kovalev <twilightfeel@gmail.com> (https://github.com/kaero)"
-    ],
-    "licenses" : [
-        {
-            "type" : "MIT",
-            "url" : "http://github.com/nodules/luster-log-file/raw/master/LICENSE"
-        }
-    ],
-    "readmeFilename" : "README.md",
-    "dependencies" : {
-        "mkdirp" : "0.3.x"
-    },
-    "peerDependencies" : {
-        "luster" : ">=0.3.1"
-    },
-    "devDependencies" : {
-        "jshint" : "2.1.x",
-        "jscs" : ">=1.0.5"
+  "name": "luster-log-file",
+  "version": "0.2.0",
+  "description": "Stream luster master and workers output to files",
+  "main": "./lib/extension.js",
+  "scripts": {
+    "test": "jshint --config ./.jshintrc ./lib ./test && jscs ./lib ./test && mocha -u bdd test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nodules/luster-log-file.git"
+  },
+  "keywords": [
+    "luster",
+    "logger",
+    "log"
+  ],
+  "author": "Phillip Kovalev <twilightfeel@gmail.com> (https://github.com/kaero)",
+  "maintainers": [
+    "Phillip Kovalev <twilightfeel@gmail.com> (https://github.com/kaero)"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/nodules/luster-log-file/raw/master/LICENSE"
     }
+  ],
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "mkdirp": "0.3.x"
+  },
+  "peerDependencies": {
+    "luster": ">=0.3.1"
+  },
+  "devDependencies": {
+    "jscs": ">=1.0.5",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1"
+  }
 }
