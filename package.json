@@ -1,6 +1,6 @@
 {
   "name": "luster-log-file",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Stream luster master and workers output to files",
   "main": "./lib/extension.js",
   "scripts": {
